@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-	static int  counter=0
+	static int  counter=0;
 	@GetMapping("/")
 	public String index() {
 		return "hello-world-$counter " + counter++;
