@@ -8,7 +8,7 @@ public class HelloController {
 	static int  counter=0;
 	@GetMapping("/")
 	public String index() {
-		return "hello-world-$counter " + counter++;
+		return "hello-world-" + counter++;
 	}
 
 }
